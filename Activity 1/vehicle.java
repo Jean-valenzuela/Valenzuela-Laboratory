@@ -28,48 +28,6 @@ public class vehicle {
         System.out.println("Speed: " + speed + " km/h");
         System.out.println("Fuel Type: " + fuelType);
     }
-}
-
-//car subclass
-    class car extends vehicle {
-    private int numDoors;
-
-        public car(String brand, int speed, String fuelType, int numDoors) {
-        super(brand, speed, fuelType);
-        this.numDoors = numDoors;
-    }
-
-    public int getNumDoors() {
-        return numDoors;
-    }
-
-    @Override
-    public void displayInfo() {
-        super.displayInfo();
-        System.out.println("Number of Doors: " + numDoors);
-    }
-}
-
-//motorcycle subclass
-    class motorcycle extends vehicle {
-    private boolean hasSidecar;
-
-    public motorcycle(String brand, int speed, String fuelType, boolean hasSidecar) {
-        super(brand, speed, fuelType);
-        this.hasSidecar = hasSidecar;
-    }
-
-    public boolean hasSidecar() {
-        return hasSidecar;
-    }
-
-    @Override
-    public void displayInfo() {
-        super.displayInfo();
-        System.out.println("Has Sidecar? [yes or none]: " + hasSidecar);
-    }
-}
-
     public static void main(String[] args) {
         Scanner eya = new Scanner(System.in);
         String option;
@@ -125,4 +83,46 @@ public class vehicle {
 
         eya.close();
             System.out.println("Program complete.");
-        }
+
+}
+
+//car subclass
+    class car extends vehicle {
+    private int numDoors;
+
+        public car(String brand, int speed, String fuelType, int numDoors) {
+        super(brand, speed, fuelType);
+        this.numDoors = numDoors;
+    }
+
+    public int getNumDoors() {
+        return numDoors;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Number of Doors: " + numDoors);
+    }
+}
+
+//motorcycle subclass
+    class motorcycle extends vehicle {
+    private boolean hasSidecar;
+
+    public motorcycle(String brand, int speed, String fuelType, boolean hasSidecar) {
+        super(brand, speed, fuelType);
+        this.hasSidecar = hasSidecar;
+    }
+
+    public boolean hasSidecar() {
+        return hasSidecar;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Has Sidecar? [yes or none]: " + hasSidecar);
+    }
+}
+}
