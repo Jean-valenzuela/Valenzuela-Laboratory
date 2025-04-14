@@ -65,7 +65,7 @@ public class vehicle {
                 System.out.print("Enter the fuel type: ");
                 String bikeFuelType = eya.nextLine();
 
-                System.out.print("Does it have a sidecar? (true/false): ");
+                System.out.print("Does it have a sidecar? [yes or none]: ");
                 boolean hasSidecar = eya.nextBoolean();
                 eya.nextLine(); 
 
@@ -85,7 +85,7 @@ public class vehicle {
             System.out.println("Program complete.");
 
 }
-
+}
 //car subclass
     class car extends vehicle {
     private int numDoors;
@@ -124,5 +124,4 @@ public class vehicle {
         super.displayInfo();
         System.out.println("Has Sidecar? [yes or none]: " + hasSidecar);
     }
-}
 }
