@@ -34,7 +34,7 @@ public class Person {
             System.out.print("\n");
 
             System.out.print("Teacher Information: \n");
-            Teacher teacher = new Teacher("Rheeze Zara", 2025507, "Programming");
+            Teacher teacher = new Teacher("Rheeze Zara", 2025507, "Arts");
             teacher.displayInfo();
             System.out.print("\n");
 
